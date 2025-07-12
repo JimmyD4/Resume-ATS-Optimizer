@@ -1,6 +1,6 @@
 # 🧠 AI Powered ATS Resume Optimizer
 
-This is a Streamlit-based AI-powered application that analyzes your resume against a job description and helps you improve it to pass Applicant Tracking Systems (ATS). It uses Google’s Gemini LLM to generate actionable feedback and rewrite your resume to maximize job match score.
+This is a Streamlit-based AI-powered application that analyzes your resume against a job description and helps you improve to pass Applicant Tracking Systems (ATS). It uses Google’s Gemini LLM - 2.0 Flash to generate actionable feedback and rewrite your resume to maximize job match score.
 
 ## 🚀 Features
 
@@ -30,11 +30,15 @@ This is a Streamlit-based AI-powered application that analyzes your resume again
 
 ## 📁 Project Structure
 
-├── app.py # Main Streamlit app/n
-├── requirements.txt # Dependencies/n
-├── .env # API key for Google Gemini/n
-├── README.md /n
+📁 ats-resume-optimizer
+├── app.py # Main Streamlit app
+├── requirements.txt # Python dependencies
+├── .env # API Key (keep secret)
+├── README.md # Project documentation
+├── .gitignore # Ignore venv and sensitive files
 └── .streamlit/
+└── config.toml # Optional UI settings
+
 
 
 ## How It Works
