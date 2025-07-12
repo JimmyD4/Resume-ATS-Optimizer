@@ -58,26 +58,32 @@ Streamlit parses and displays the results in a clean UI
 ## ⚙️ Installation & Setup
 
 ### Clone the repo**
-
+```
 git clone https://github.com/yourusername/ats-resume-optimizer.git
 cd ats-resume-optimizer
-
+```
 ---
 
 ### Create virtual environment **
-
+```
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 ### Install dependencies
+```
 pip install -r requirements.txt
+```
 
 ### Add your Google Gemini API key
+```
 GOOGLE_API_KEY=your_gemini_api_key_here
+```
 
 ### Run Locally
+```
 streamlit run app.py
-
+```
 
 ## 🙋 Author
 
