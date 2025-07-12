@@ -30,6 +30,7 @@ This is a Streamlit-based AI-powered application that analyzes your resume again
 
 ## 📁 Project Structure
 
+```
 📁 ats-resume-optimizer
 ├── app.py # Main Streamlit app
 ├── requirements.txt # Python dependencies
@@ -38,8 +39,7 @@ This is a Streamlit-based AI-powered application that analyzes your resume again
 ├── .gitignore # Ignore venv and sensitive files
 └── .streamlit/
 └── config.toml # Optional UI settings
-
-
+```
 
 ## How It Works
 
