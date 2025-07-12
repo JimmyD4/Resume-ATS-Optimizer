@@ -55,7 +55,7 @@ Streamlit parses and displays the results in a clean UI
 
 ---
 
-## 🖼️ Preview
+## 🖼️ Preview of System
 
 ![alt text](Images/FrontendUI.png)
 
