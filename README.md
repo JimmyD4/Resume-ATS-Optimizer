@@ -55,6 +55,11 @@ Streamlit parses and displays the results in a clean UI
 
 ---
 
+## 🖼️ Preview
+
+![screenshot](./FrontendUI.png)
+
+
 ## ⚙️ Installation & Setup
 
 ### Clone the repo**
