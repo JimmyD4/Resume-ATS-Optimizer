@@ -10,12 +10,12 @@ This is a Streamlit-based AI-powered application that analyzes your resume again
 - Match percentage score
 - Missing/weak keywords
 - Profile summary generation
-- Clear improvement suggestions  
+- Clear improvement suggestions 
+
 ✅ Full resume rewrite optimized for the job  
 ✅ Highlights what was changed between your original and optimized resume  
 ✅ ATS-friendly formatting  
 ✅ Clean, responsive web interface using Streamlit  
-
 
 
 ## 📦 Tech Stack
@@ -30,18 +30,18 @@ This is a Streamlit-based AI-powered application that analyzes your resume again
 
 ## 📁 Project Structure
 
-├── app.py # Main Streamlit app
-├── requirements.txt # Dependencies
-├── .env # API key for Google Gemini
-├── README.md # This file
+├── app.py # Main Streamlit app/n
+├── requirements.txt # Dependencies/n
+├── .env # API key for Google Gemini/n
+├── README.md /n
 └── .streamlit/
 
 
 ## How It Works
 
-User uploads a PDF resume
-User pastes a job description
-The app sends both to Gemini 2.0 via a well-crafted prompt
+User uploads a PDF resume/n
+User pastes a job description/n
+The app sends both to Gemini 2.0 via a well-crafted prompt/n
 Gemini returns a JSON string with:
 JD Match
 MissingKeywords
