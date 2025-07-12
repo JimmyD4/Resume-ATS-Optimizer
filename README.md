@@ -57,11 +57,7 @@ Streamlit parses and displays the results in a clean UI
 
 ## 🖼️ Preview
 
-![screenshot](./FrontendUI.png)
-![](2025-07-12-13-35-35.png)
-
-![screenshot](2025-07-12-13-35-35.png)
-
+![alt text](Images/FrontendUI.png)
 
 ## ⚙️ Installation & Setup
 
