@@ -95,10 +95,11 @@ Provide the improved resume as a properly formatted plain text resume (not JSON 
 
 ## streamlit app
 st.title("Smart Application Tracking System and Resume Optimizer")
+st.markdown("Developed by Jigme Dorji")
 st.markdown("""
 This application uses your resume and the job description you are interested to apply to analyze and provide insights on how well your resume matches against the role.
 It also provides suggestions on how to improve your resume to increase your chances of passing the ATS (Applicant Tracking System) used by many companies.
-            Based on the information provided, the application will generate a score indicating how well your resume matches the job description and also rebuild your resume to align with the job description.
+Based on the information provided, the application will generate a score indicating how well your resume matches the job description and also rebuild your resume to align with the job description.
 """)
 st.markdown("### Instructions")
 st.markdown("""
