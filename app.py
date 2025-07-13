@@ -94,8 +94,8 @@ Provide the improved resume as a properly formatted plain text resume (not JSON 
 """
 
 ## streamlit app
-st.title("Smart Application Tracking System and Resume Optimizer")
-st.markdown("Developed by Jigme Dorji")
+st.title("## 🚀 Smart Application Tracking System and Resume Optimizer")
+st.markdown("#### 🎯 Developed by Jigme Dorji")
 st.markdown("""
 This application uses your resume and the job description you are interested to apply to analyze and provide insights on how well your resume matches against the role.
 It also provides suggestions on how to improve your resume to increase your chances of passing the ATS (Applicant Tracking System) used by many companies.
@@ -108,7 +108,7 @@ st.markdown("""
 3. Click **Submit** to get your ATS score and recommendations.
 """)
 
-job_description = st.text_area("Paste the Job Description", height=300)
+job_description = st.text_area("📌 Paste the Job Description", height=300)
 resume_input_mode = st.radio(
     "How would you like to input your resume?",
     ("Paste Resume Text", "Upload Resume PDF")
@@ -118,11 +118,11 @@ resume_text = ""
 uploaded_file = None
 
 if resume_input_mode == "Paste Resume Text":
-    resume_text = st.text_area("Paste your resume here", height=300)
+    resume_text = st.text_area("📋Paste your resume here", height=300)
 elif resume_input_mode == "Upload Resume PDF":
-    uploaded_file = st.file_uploader("Upload Your Resume (PDF)", type="pdf")
+    uploaded_file = st.file_uploader("📄 Upload Your Resume (PDF)", type="pdf")
 
-submit = st.button("Submit")
+submit = st.button("🚀 Submit and Analyze")
 
 if submit:
     if not job_description.strip():
@@ -145,7 +145,7 @@ if submit:
     filled_prompt = input_prompt.format(text=text, job_description=job_description)
     
     # Get LLM response
-    with st.spinner("Analyzing your resume..."):
+    with st.spinner("🤖 Analyzing your resume..."):
         response = get_gemini_repsonse(filled_prompt)
     
     # Parse JSON from model response
@@ -159,9 +159,9 @@ if submit:
     
     # Show results
     jd_match = result.get("Job Description Match", "N/A")
-    st.markdown(f"### Resume Match to Job Description is **{jd_match}**")
+    st.markdown(f"### ✅ Resume Match to Job Description is **{jd_match}**")
     
-    st.subheader("Missing Keywords")
+    st.subheader("🧩 Missing Keywords")
     keywords = result.get("MissingKeywords", [])
     if keywords:
         col1, col2 = st.columns(2)
@@ -175,7 +175,7 @@ if submit:
     else:
         st.write("No missing keywords identified.")
     
-    st.subheader("Profile Summary")
+    st.subheader("👤 Profile Summary")
     st.write(result.get("Profile Summary", "Not available"))
     
     # Improvement suggestions + rewrite resume
@@ -199,13 +199,13 @@ if submit:
             suggestions=suggestions_text
         )
         
-        with st.spinner("Generating optimized resume..."):
+        with st.spinner("✍️ Generating optimized resume..."):
             rewritten_resume = get_gemini_repsonse(rewrite_filled_prompt)
         
         rewritten_resume = rewritten_resume.replace("**", "")
         rewritten_resume = re.sub(r"(?i)^okay.*?resume.*?\n+", "", rewritten_resume).strip()
 
-        st.subheader("Optimized Resume Inline With The Job Description")
+        st.subheader("📄 Optimized Resume Inline With The Job Description")
         st.markdown(rewritten_resume)
         
     else:
